@@ -102,19 +102,19 @@ body{
 
 @media (max-width: 640px){
     .card{
-        width: 280px;
+        width: 252px;
         padding: 24px 24px 48px 24px;
     }
     .dividerMobile{
         display: block;
-        width: 280px;
+        width: 252px;
     }
     .dividerDesktop{
         display: none;
     }
     .cajaBoton{
         bottom: -24px;
-        left: 140px;
+        left: 126px;
     }
     .quote{
         font-size: 24px;
