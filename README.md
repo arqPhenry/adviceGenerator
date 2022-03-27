@@ -1,4 +1,5 @@
 # Advice generator app
+test it: https://arqphenry.github.io/adviceGenerator/
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
 
