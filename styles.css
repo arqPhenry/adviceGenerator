@@ -100,7 +100,7 @@ body{
     text-decoration: none; 
 }
 
-@media (max-width: 375px){
+@media (max-width: 640px){
     .card{
         width: 280px;
         padding: 24px 24px 48px 24px;
