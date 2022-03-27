@@ -1,0 +1,123 @@
+
+:root {
+    /*Basic colors*/
+    --white: #FFFFFF;
+    --black: #000000;
+    /*Light colors*/
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    /*Dark colors*/
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    /*Font mode*/
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --fontSizeQuote: 28px;
+    --FontFamily: 'Manrope', sans-serif;
+    --fontWeith: 800;
+}
+body{
+    margin: 0px;
+    font-family: var(--FontFamily);
+    font-weight: 800;
+    background-color: var(--DarkBlue);
+}
+.container{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: grid;
+    width: 444px;
+    padding: 36px 36px 54px 36px;
+    justify-content: center;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 12px;
+    position: absolute;
+
+    box-shadow: 6px 12px 30px 0px rgba(0,0,0,0.15);
+}
+.title{
+    text-align: center;
+    color: var(--NeonGreen);
+    margin: 0px;
+
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: var(--sm);
+}
+.quote{
+    text-align: center;
+    font-size: var(--fontSizeQuote);
+    color: var(--LightCyan);
+}
+.dividerMobile{
+    display: none;
+}
+.cajaBoton{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -24px;
+    left: 234px;
+}
+.button{
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    box-shadow: 0px 0px 30px 0px rgba(82,255,168,1);
+}
+.button:active{
+    box-shadow: 0px 0px 30px 5px rgba(82,255,168,1);
+}
+.button img{
+    width: 50%;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--LightCyan);
+
+}
+.attribution a { 
+    color: var(--NeonGreen);
+    text-decoration: none; 
+}
+
+@media (max-width: 375px){
+    .card{
+        width: 280px;
+        padding: 24px 24px 48px 24px;
+    }
+    .dividerMobile{
+        display: block;
+        width: 280px;
+    }
+    .dividerDesktop{
+        display: none;
+    }
+    .cajaBoton{
+        bottom: -24px;
+        left: 140px;
+    }
+    .quote{
+        font-size: 24px;
+    }
+
+}
